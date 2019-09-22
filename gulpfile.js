@@ -9,10 +9,10 @@ let gulp = require('gulp'),
 
 
 gulp.task('sass', function () {
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(autoprefixer({
+        .pipe(autoprefixer({ 
             overrideBrowserslist: ['last 8 versions']
         }))
         .pipe(gulp.dest('app/css'))
