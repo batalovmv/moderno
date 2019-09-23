@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+@import "media";
 
 .header__top-inner {
   display: flex;
@@ -45,8 +46,51 @@
       margin-left: 30px;
     }
   }
-  a{
-      color: #fff;
-      font-size: 14px;
+  a {
+    color: #fff;
+    font-size: 14px;
+  }
+}
+.main-block {
+  background-image: url(../images/main-block-bg.jpg);
+  height: 533px;
+  /* position: relative; */
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
+.main-block__inner {
+    padding-top: 160px;
+
+  line-height: 30px;
+  font-family: "bold";
+  text-align: center;
+  .top-text {
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+  }
+  .bottom-text {
+    font-size: 20px;
+    color: #fff;
+    padding: 25px 0 50px 0;
+  }
+  input[type="text"] {
+    padding: 17px 21px;
+    border-radius: 6px;
+    border-width: 0;
+    width: 630px;
+    max-width: 630px;
+  }
+  .search {
+    position: relative;
+  }
+  img {
+    height: 17px;
+    right: 30px;
+    top: 18px;
+    position: absolute;
   }
 }
