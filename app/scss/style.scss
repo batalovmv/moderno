@@ -115,6 +115,9 @@
 .products {
   padding: 110px 0;
   background-color: $grey;
+  .container-fluid{
+    max-width: 1920px; /* ограничил ширину  */
+  }
 }
 .products__title {
   color: $bg;
@@ -135,8 +138,11 @@
 }
 .products__inner-box{
   display: flex;
-  justify-content: space-between;
+  
+  
+  justify-content: space-between ;
   flex-wrap: wrap;
+  max-width: 1920px;
   
 }
 .products__item {
