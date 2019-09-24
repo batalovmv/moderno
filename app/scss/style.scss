@@ -115,7 +115,8 @@
 .products {
   padding: 110px 0;
   background-color: $grey;
-  .container-fluid{
+  margin-bottom: 120px;
+  .container-fluid {
     max-width: 1920px; /* ограничил ширину  */
   }
 }
@@ -136,20 +137,18 @@
     margin-left: 5px;
   }
 }
-.products__inner-box{
+.products__inner-box {
   display: flex;
-  
-  
-  justify-content: space-between ;
+
+  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1920px;
-  
 }
 .products__item {
   max-width: 442px;
   width: 100%;
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
   margin-bottom: 30px;
+  background-color: #ffffff;
   &-img {
     min-height: 250px;
 
@@ -206,25 +205,84 @@
       background-size: cover;
       margin-right: 14px;
     }
+   
     .span {
       font-size: 14px;
       font-weight: 500;
     }
   }
 }
-.products__bottom-btn{
+.products__bottom-btn {
   margin: 45px 5px 0;
   text-align: center;
-button{
-  margin: 45px 5px 0;
-  box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
-  border:none;
-  background-color: #fff;
-  color: $bg;
-  padding: 20px 30px;
-  cursor: pointer;
-}
-}
 
+  button {
+    margin: 45px 5px 0;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    border: none;
+    background-color: #fff;
+    color: $bg;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+}
 
 /* end products */
+/* start slider */
+.slider {
+  .container-fluid {
+    max-width: 1920px;
+  }
+  &-title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 60px;
+  }
+}
+.slick-slider {
+  .slick-list{
+    padding-left: 11px;
+  }
+  .slick-dots {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+
+    .slick-active {
+      button {
+        background-color: $green;
+      }
+    }
+    li + li {
+      padding-left: 3px;
+    }
+    button {
+      outline: none;
+      border-width: 0;
+      padding: 0;
+      cursor: pointer;
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: rgb(232, 232, 232);
+    }
+  }
+}
+
+
+
+/* end slider */
+/* starts stars */
+.products__item-star{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  .jq-ry-container{
+    padding: 3px 10px;
+
+  }
+}
+
