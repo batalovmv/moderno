@@ -293,8 +293,7 @@
         color: #fff;
         padding: 120px 0 85px;
       }
-      &-box {
-      }
+      
     }
   }
 }
@@ -351,9 +350,11 @@ color: $green;
     }
   }
 }
-/* .iconsvg-1{
+.iconsvg-1{
   g{
-fill : white;
+    height: 100px;
+    width: 10px;
+fill : black;
   }
 }
 .iconsvg-2{
@@ -363,7 +364,8 @@ g{
 }
 .iconsvg-3{
   g{
-    fill : #fff;
+    fill : black;
   }
-} */
+}
+
 /* choose-block end */
