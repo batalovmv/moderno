@@ -293,7 +293,6 @@
         color: #fff;
         padding: 120px 0 85px;
       }
-      
     }
   }
 }
@@ -308,19 +307,18 @@
   .block-box {
     max-width: 370px;
     .chosse__inner-content {
-      transition: all .3s;
+      transition: all 0.3s;
       &:hover {
-        .chosse__inner-image{
-          g{
-            fill:#fff;
-          }
+        .chosse__inner-image {
+          path {
+            fill: #fff;
+                   }
         }
-        .chosse__inner-image{
+        .chosse__inner-image {
           background-color: $green;
-                  
         }
-        .chosse__inner-title{
-color: $green;
+        .chosse__inner-title {
+          color: $green;
         }
       }
       text-align: center;
@@ -333,14 +331,14 @@ color: $green;
         justify-content: center;
         align-items: center;
         margin: 0 auto 30px;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       .chosse__inner-title {
         padding-bottom: 30px;
         @include f500;
         color: #fff;
         font-size: 24px;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       .chosse__inner-text {
         font-size: 15px;
@@ -350,22 +348,16 @@ color: $green;
     }
   }
 }
-.iconsvg-1{
-  g{
-    height: 100px;
-    width: 10px;
-fill : black;
+.svg-inline--fa {
+  height: 65px;
+
+  path {
+    fill: black;
+    height: 150px;
   }
 }
-.iconsvg-2{
-g{
-  fill : black; 
-  }
-}
-.iconsvg-3{
-  g{
-    fill : black;
-  }
+.svg-inline--fa.fa-w-16 {
+  width: 4em;
 }
 
 /* choose-block end */
